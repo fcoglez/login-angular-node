@@ -1,2 +1,3 @@
-cd dist/
+/server/dist/
+
 .env
