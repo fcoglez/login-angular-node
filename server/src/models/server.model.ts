@@ -1,6 +1,9 @@
 import express, { Application } from 'express';
+import cors from 'cors';
 import routesProduct from '../routes/product.route';
 import routesUser from '../routes/user.route';
+
+
 import { Product } from './product.model';
 import { User } from './user.model';
 
@@ -35,6 +38,10 @@ class Server {
 
     //Usar antes que las rutas en el constructor
     public middlewares(){
+
+        //configuración CORS    
+        this.app.use(cors());
+
         //Con esto, cuando enviamos la request podemos ver el body
         this.app.use(express.json()); 
 
