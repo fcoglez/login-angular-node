@@ -1,4 +1,5 @@
-# login-node-angular
+# PARTE DE NODE (BACKEND)
+
 
 1. creamos un directorio donde vamos a crear una api con node. Una vez
 dentro del directorio, lanzamos el comando npm init -y que se usa para crear rápidamente un archivo package.json con valores predeterminados en un proyecto Node.js.
@@ -18,3 +19,4 @@ nodemon --save-dev -> se usa para refrescar todos el rato los cambios.
 
 3. Inicializamos typescript en nuestro proyecto. Lanzamos el comando
 npx tsc --init
+
