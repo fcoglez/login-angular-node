@@ -16,15 +16,14 @@ export class UserService {
 
   constructor(private http: HttpClient) {}
 
-
   public signIn(user: IUser): Observable<any>{
-
-    return this.http.post<any>(`${base_url} /users/`, user);
-
+    return this.http.post<any>(`${base_url}/users/`, user);
   }
 
-  //TODO
-  //problemas de cors
+
+  public login(user: IUser): Observable<string>{
+    return this.http.post<string>(`${base_url}/users/login`, user);
+  }
 
 
 
